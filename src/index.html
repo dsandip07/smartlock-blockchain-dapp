@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Property Lease Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <hr/>
+      <div id="propsRow" class="row">
+      </div>
+      <div class="duration-input">
+        <strong>Status</strong>: <span class="system-status"></span>
+      </div>
+      <hr/>
+    </div>
+
+    <div id="propTemplate" style="display: none;">
+      <div class="col-sm-4 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-prop">
+          <div class="panel-heading">
+            <h4 class="panel-title">House</h4>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Address</strong>: <span class="prop-address">Address</span><br/>
+            <strong>Age (Yrs)</strong>: <span class="prop-age">10</span><br/>
+            <strong>Area (sq. ft.)</strong>: <span class="prop-area">1000</span><br/>
+            <strong>Rent Rate (GWei/day)</strong>: <span class="prop-rate">10000</span><br/><br/>
+            <strong>Lease Duration</strong>: <input class="prop-days" size="8" type="text"></input>
+            <br/><br/>
+            <button class="btn btn-default btn-pay" type="button" data-id="0">Pay rent</button>
+            <button class="btn btn-default btn-unlock" type="button" data-id="0">Unlock</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
