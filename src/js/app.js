@@ -152,7 +152,6 @@ App = {
 
       ownerAccount = accounts[0];
     
-
       App.contracts.AssetLease.deployed().then(function(instance) {
         return instance.unlockAsset(assetId, {from: ownerAccount, gas: 500000});
       }).then(function(result) {
